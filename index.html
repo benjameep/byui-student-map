@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      margin:0px;
+      padding:0px;
+      height:99vh
+    }
+    #states {
+      fill: #EBEBEB;
+    }
+
+    #states .active {
+      fill: orange;
+    }
+
+    #state-borders {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 1.5px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      pointer-events: none;
+    }
+
+    g.active circle{
+      fill:#F58300;
+      fill-opacity: 0.5
+    }
+
+    .hidden { 
+      display: none; 
+    }
+    div.tooltip {
+      color: #222; 
+      background: #fff; 
+      padding: .5em; 
+      text-shadow: #f5f5f5 0 1px 0;
+      border-radius: 2px; 
+      box-shadow: 0px 0px 2px 0px #a6a6a6; 
+      opacity: 0.9; 
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <svg width="100%" height="100%" viewbox="0 0 960 500" preserveAspectRatio="xMidYMid meet"></svg>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
